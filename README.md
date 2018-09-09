@@ -46,23 +46,23 @@ mono에 log찍는거
 ### 1-1. 프로젝트 생성
 
 * New Project - Spring Initializr 선택
-  ![1-01](/Users/occidere/Desktop/1-01.png)
+  ![1-01](img/1-01.png)
 * Gradle Project 선택 (2.x.x)
-  ![1-02](/Users/occidere/Desktop/1-02.png)
+  ![1-02](img/1-02.png)
 * 라이브러리 선택 (Reactive Web: 필수, Lombok: 권장)
-  ![1-03](/Users/occidere/Desktop/1-03.png)
+  ![1-03](img/1-03.png)
 * 생성 완료
-  ![1-04](/Users/occidere/Desktop/1-04.png)
+  ![1-04](img/1-04.png)
 
 ### * 만약 Community Edition 이라면?
 
 1. https://start.spring.io/ 에 접속
 2. 라이브러리 선택후 generate 하면 zip 파일로 다운로드 됨
-   ![1-05](/Users/occidere/Desktop/1-05.png)
+   ![1-05](img/1-05.png)
 
 ### 1-2. Lombok 플러그인 설치
 
-![1-06](/Users/occidere/Desktop/1-06.png)
+![1-06](img/1-06.png)
 
 
 
@@ -88,10 +88,10 @@ mono에 log찍는거
    ````
 
 2. Rest API Tools 선택 (크롬의 postman과 비슷)
-   ![1-07](/Users/occidere/Desktop/1-07.png)
+   ![1-07](img/1-07.png)
 
 3. 실행
-   ![1-08](/Users/occidere/Desktop/1-08.png)
+   ![1-08](img/1-08.png)
 
 
 
@@ -114,7 +114,7 @@ mono에 log찍는거
    ````
 
    log가 출력 시점 확인
-   ![2-01](/Users/occidere/Desktop/2-01.png)
+   ![2-01](img/2-01.png)
 
    * 실제로 call 이 들어와야 실행이 되며 로그가 찍히게 된다
 
@@ -139,7 +139,7 @@ mono에 log찍는거
 
    log 출력 시점 확인
 
-   ![2-02](/Users/occidere/Desktop/2-02.png)
+   ![2-02](img/2-02.png)
 
 
 
@@ -169,7 +169,7 @@ mono에 log찍는거
    * just() 대신 **fromSupplier() 를 이용하여 인자로 함수를 전달**함
 
    log 출력 시점 확인
-   ![2-03](/Users/occidere/Desktop/2-03.png)
+   ![2-03](img/2-03.png)
 
    * pos1, 2가 찍힌 후 generateHello() 처리가 됨 -> **비동기 처리**
 
@@ -206,7 +206,7 @@ mono에 log찍는거
 
   결과 확인
 
-  ![2-04](/Users/occidere/Desktop/2-04.png)
+  ![2-04](img/2-04.png)
 
   * **Mono나 Flux등의 Publisher는 여러번 subscribe를 처리 가능!**
   * 이와 관련하여 Cold & Hot 타입으로 세분화 할 수 있다.
@@ -260,7 +260,7 @@ Mono<String> hello() {
 
 수행 결과
 
-![2-05](/Users/occidere/Desktop/2-05.png)
+![2-05](img/2-05.png)
 
 -> IllegalStateException 발생..
 
@@ -270,7 +270,7 @@ Mono<String> hello() {
 
 원래라면 toby님의 예시처럼 되야했으나... 
 
-![2-06](/Users/occidere/Desktop/2-06.png)
+![2-06](img/2-06.png)
 
 
 
