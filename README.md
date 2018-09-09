@@ -24,23 +24,6 @@
    * block() 메서드...
 
 
-
-
-
-ReactiveWeb = WebFlux
-
-
-
-간단한 Rest API Test tool (Postman 과 비슷)
-
-(사진)
-
-
-
-mono에 log찍는거
-
-
-
 ## 1. 스프링 리액티브 웹 프로젝트 환경 구축
 
 ### 1-1. 프로젝트 생성
